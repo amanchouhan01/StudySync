@@ -65,23 +65,19 @@
         <h2 class="company-title">Trusted by the best</h2>
         <div class="company-grid">
             <div class="company-logo">
-                <img src="src/google_logo.png"
-                    class="svg-img">
+                <img src="src/google_logo.png" class="svg-img">
                 <span class="logo-txt">Google</span>
             </div>
             <div class="company-logo">
-                <img src="src/microsoft_logo.png"
-                    class="svg-img">
+                <img src="src/microsoft_logo.png" class="svg-img">
                 <span class="logo-txt">Microsoft</span>
             </div>
             <div class="company-logo">
-                <img src="src/LinkedIn_logo.png"
-                    class="svg-img">
+                <img src="src/LinkedIn_logo.png" class="svg-img">
                 <span class="logo-txt">LinkedIn</span>
             </div>
             <div class="company-logo">
-                <img src="src/vectorEdu_logo.webp"
-                    class="svg-img">
+                <img src="src/vectorEdu_logo.webp" class="svg-img">
                 <span class="logo-txt">VectorEdu</span>
             </div>
         </div>
@@ -458,9 +454,12 @@
         </footer>
 
         <div class="footer-copyright">
-            &copy; 2025 StudySync. All rights reserved.
-
+            &copy; <span id="year"></span> StudySync. All rights reserved.
         </div>
+        <script>
+            const yearEl = document.getElementById("year");
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+        </script>
     </div>
 
     <script src="index.js"></script>
